@@ -42,7 +42,7 @@ for tweet in tweets:
   print(count)
   count = count + 1
 print("######################")
-with open("X_train_csnli.txt", "w") as f:
+with open("train_tweets_csnli.txt", "w") as f:
   for i in range(len(en_transliterated_tweets)):
     f.write(tweets[i]+"\n")
     f.write(en_transliterated_tweets[i]+"\n")
@@ -66,7 +66,7 @@ for i in range(len(en_transliterated_tweets)):
 #  print(i)
 
 
-with open("X_train_translated.txt", "w") as f:
+with open("train_tweets_translated.txt", "w") as f:
   for i in range(len(en_transliterated_tweets)):
     f.write(tweets[i]+"\n")
     f.write(en_transliterated_tweets[i]+"\n")
